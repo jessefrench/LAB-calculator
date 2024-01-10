@@ -1,0 +1,46 @@
+body {
+  font-size: 28px;
+}
+
+.wrapper {
+  width: 400px;
+  border: 2px solid black;
+}
+
+div {
+  border: 2px solid black;
+  width: 100px;
+}
+
+#divide {
+  display: flex;
+  flex-direction: row;
+}
+
+#divide > div:first-child {
+  width: 200px;
+}
+
+#multiply {
+  display: flex;
+  flex-direction: row;
+}
+
+#subtract {
+  display: flex;
+  flex-direction: row;
+}
+
+#add {
+  display: flex;
+  flex-direction: row;
+}
+
+#equals {
+  display: flex;
+  flex-direction: row;
+}
+
+#equals > div:first-child {
+  width: 300px;
+}
