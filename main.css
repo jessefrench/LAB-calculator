@@ -1,15 +1,24 @@
-body {
-  font-size: 28px;
+#result {
+  height: 75px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 52px;
+  text-align: end;
+}
+
+.function-btn {
+  background-color: #df974c;
 }
 
 .wrapper {
   width: 400px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
-div {
-  border: 2px solid black;
+button {
+  border: 1px solid black;
   width: 100px;
+  height: 100px;
 }
 
 #divide {
@@ -17,7 +26,7 @@ div {
   flex-direction: row;
 }
 
-#divide > div:first-child {
+#divide > button:first-child {
   width: 200px;
 }
 
@@ -41,6 +50,6 @@ div {
   flex-direction: row;
 }
 
-#equals > div:first-child {
+#equals > button:first-child {
   width: 300px;
 }
