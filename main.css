@@ -1,13 +1,28 @@
 #result {
-  height: 75px;
   background-color: #000000;
   color: #ffffff;
-  font-size: 52px;
   text-align: end;
+  font-family: monospace;
+  border: 1px solid black;
+}
+
+p {
+  font-size: 34px;
+  padding: 20px 10px;
+  margin: 0;
 }
 
 .function-btn {
   background-color: #df974c;
+  color: #ffffff;
+}
+
+.function-btn:hover {
+  background-color: #dfb07e;
+}
+
+.function-btn:active {
+  background-color: #dd8d37;
 }
 
 .wrapper {
@@ -19,6 +34,17 @@ button {
   border: 1px solid black;
   width: 100px;
   height: 100px;
+  font-size: 34px;
+  background-color: #d8d9db;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ebebeb;
+}
+
+button:active {
+  background-color: #bbbcbe;
 }
 
 #divide {
