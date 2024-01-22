@@ -1,15 +1,35 @@
-#result {
-  background-color: #000000;
-  color: #ffffff;
-  text-align: end;
-  font-family: monospace;
+.wrapper {
+  width: 400px;
   border: 1px solid black;
 }
 
-p {
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+.result {
+  background-color: #000000;
+  color: #ffffff;
+  justify-content: flex-end;
+  font-family: monospace;
+  border: 1px solid black;
+  height: 80px;
+}
+
+.display {
   font-size: 34px;
   padding: 20px 10px;
   margin: 0;
+}
+
+button {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  font-size: 34px;
+  background-color: #d8d9db;
+  cursor: pointer;
 }
 
 .function-btn {
@@ -25,20 +45,6 @@ p {
   background-color: #dd8d37;
 }
 
-.wrapper {
-  width: 400px;
-  border: 1px solid black;
-}
-
-button {
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
-  font-size: 34px;
-  background-color: #d8d9db;
-  cursor: pointer;
-}
-
 button:hover {
   background-color: #ebebeb;
 }
@@ -47,35 +53,10 @@ button:active {
   background-color: #bbbcbe;
 }
 
-#divide {
-  display: flex;
-  flex-direction: row;
-}
-
-#divide > button:first-child {
+.divide > button:first-child {
   width: 200px;
 }
 
-#multiply {
-  display: flex;
-  flex-direction: row;
-}
-
-#subtract {
-  display: flex;
-  flex-direction: row;
-}
-
-#add {
-  display: flex;
-  flex-direction: row;
-}
-
-#equals {
-  display: flex;
-  flex-direction: row;
-}
-
-#equals > button:first-child {
+.equals > button:first-child {
   width: 300px;
 }

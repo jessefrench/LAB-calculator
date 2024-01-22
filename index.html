@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calc U L8tr</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  
-  <div class="wrapper">
-    <section id="result">
-      <p>0</p>
-    </section>
-  
-    <section id="divide">
-      <button type="button">C</button>
-      <button type="button">&#8592;</button>
-      <button type="button" class="function-btn">&#247;</button>
-    </section>
-  
-    <section  type="button"id="multiply">
-      <button type="button">7</button>
-      <button type="button">8</button>
-      <button type="button">9</button>
-      <button type="button" class="function-btn">&#215;</button>
-    </section>
-  
-    <section  type="button"id="subtract">
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-      <button type="button" class="function-btn">&#8722;</button>
-    </section>
-  
-    <section  type="button"id="add">
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button" class="function-btn">&#43;</button>
-    </section>
-  
-    <section id="equals">
-      <button type="button">0</button>
-      <button type="button" class="function-btn">&#61;</button>
-    </section>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc U L8tr</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    
+    <div id="app" class="wrapper">
+      <section class="result">
+        <div class="display"></div>
+      </section>
+    
+      <section class="divide">
+        <button onclick="clearDisplay()" type="button">C</button>
+        <button onclick="back()" type="button">&#8592;</button>
+        <button onclick="appendToDisplay('/')" type="button" class="function-btn">&#247;</button>
+      </section>
+    
+      <section class="multiply">
+        <button onclick="appendToDisplay('7')" type="button">7</button>
+        <button onclick="appendToDisplay('8')" type="button">8</button>
+        <button onclick="appendToDisplay('9')" type="button">9</button>
+        <button onclick="appendToDisplay('*')" type="button" class="function-btn">&#215;</button>
+      </section>
+    
+      <section class="subtract">
+        <button onclick="appendToDisplay('4')" type="button">4</button>
+        <button onclick="appendToDisplay('5')" type="button">5</button>
+        <button onclick="appendToDisplay('6')" type="button">6</button>
+        <button onclick="appendToDisplay('-')" type="button" class="function-btn">&#8722;</button>
+      </section>
+    
+      <section class="add">
+        <button onclick="appendToDisplay('1')" type="button">1</button>
+        <button onclick="appendToDisplay('2')" type="button">2</button>
+        <button onclick="appendToDisplay('3')" type="button">3</button>
+        <button onclick="appendToDisplay('+')" type="button" class="function-btn">&#43;</button>
+      </section>
+    
+      <section class="equals">
+        <button onclick="appendToDisplay('0')" type="button">0</button>
+        <button onclick="calculate()" type="button" class="function-btn">&#61;</button>
+      </section>
+    </div>
 
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
